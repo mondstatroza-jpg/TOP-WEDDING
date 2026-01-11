@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP-WEDDING | Профессиональный ведущий на праздники</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon через Font Awesome (символ бокала) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥂</text></svg>">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>TOP-WEDDING</h1>
+                        <p>Профессиональный ведущий</p>
+                    </div>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="pages/portfolio.html">Портфолио</a></li>
+                        <li><a href="pages/how-it-works.html">Как работает ведущий</a></li>
+                        <li><a href="pages/services.html">Услуги</a></li>
+                        <li><a href="pages/contact.html">Контакты</a></li>
+                    </ul>
+
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Баннер с каруселью -->
+    <section class="banner">
+        <div class="carousel">
+            <div class="carousel-slide active">
+                <div class="carousel-content">
+                    <h2 class="animate-text">Ваш незабываемый праздник начинается здесь!</h2>
+                    <p class="animate-text-delay">Профессиональный ведущий с 10-летним опытом</p>
+                    <a href="#price" class="btn btn-primary animate-btn">Выбрать программу</a>
+                </div>
+                <div class="carousel-overlay"></div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h2 class="animate-text">Свадьбы, корпоративы, юбилеи</h2>
+                    <p class="animate-text-delay">Индивидуальный подход к каждому мероприятию</p>
+                    <a href="#price" class="btn btn-primary animate-btn">Посмотреть цены</a>
+                </div>
+                <div class="carousel-overlay"></div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="carousel-content">
+                    <h2 class="animate-text">Эмоции, которые останутся навсегда</h2>
+                    <p class="animate-text-delay">Я создаю атмосферу настоящего праздника</p>
+                    <a href="#contact" class="btn btn-primary animate-btn">Связаться сейчас</a>
+                </div>
+                <div class="carousel-overlay"></div>
+            </div>
+
+            <button class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с ценами -->
+    <section class="price-section" id="price">
+        <div class="container">
+            <h2 class="section-title">Праздничные программы</h2>
+            <p class="section-subtitle">Выберите подходящий вариант для вашего мероприятия</p>
+
+            <div class="price-cards">
+                <!-- Карточка 1 -->
+                <div class="price-card">
+                    <div class="price-card-header">
+                        <h3>Стандарт</h3>
+                        <div class="price">от 25 000 ₽</div>
+                    </div>
+                    <div class="price-card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ведущий на 4 часа</li>
+                            <li><i class="fas fa-check"></i> Разработка сценария</li>
+                            <li><i class="fas fa-check"></i> Музыкальное сопровождение</li>
+                            <li><i class="fas fa-check"></i> 3 конкурса с призами</li>
+                            <li><i class="fas fa-times"></i> Помощь в организации</li>
+                        </ul>
+
+                        <div class="price-card-buttons">
+                            <button class="btn btn-primary open-modal" data-type="order" data-plan="Стандарт">Заказать</button>
+                            <button class="btn btn-secondary open-contact">Связаться с ведущим</button>
+                            <a href="pages/price-details.html#standard" class="btn btn-outline">Подробности</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="price-card featured">
+                    <div class="price-card-header">
+                        <h3>Премиум</h3>
+                        <div class="price">от 40 000 ₽</div>
+                        <div class="popular-label">ПОПУЛЯРНО</div>
+                    </div>
+                    <div class="price-card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ведущий на 6 часов</li>
+                            <li><i class="fas fa-check"></i> Индивидуальный сценарий</li>
+                            <li><i class="fas fa-check"></i> Полный звуковой комплект</li>
+                            <li><i class="fas fa-check"></i> 6 конкурсов с призами</li>
+                            <li><i class="fas fa-check"></i> Помощь в организации</li>
+                        </ul>
+
+                        <div class="price-card-buttons">
+                            <button class="btn btn-primary open-modal" data-type="order" data-plan="Премиум">Заказать</button>
+                            <button class="btn btn-secondary open-contact">Связаться с ведущим</button>
+                            <a href="pages/price-details.html#premium" class="btn btn-outline">Подробности</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="price-card">
+                    <div class="price-card-header">
+                        <h3>Люкс</h3>
+                        <div class="price">от 60 000 ₽</div>
+                    </div>
+                    <div class="price-card-body">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ведущий на 8+ часов</li>
+                            <li><i class="fas fa-check"></i> Эксклюзивный сценарий</li>
+                            <li><i class="fas fa-check"></i> Профессиональное оборудование</li>
+                            <li><i class="fas fa-check"></i> 10+ конкурсов с призами</li>
+                            <li><i class="fas fa-check"></i> Полная организация</li>
+                        </ul>
+
+                        <div class="price-card-buttons">
+                            <button class="btn btn-primary open-modal" data-type="order" data-plan="Люкс">Заказать</button>
+                            <button class="btn btn-secondary open-contact">Связаться с ведущим</button>
+                            <a href="pages/price-details.html#lux" class="btn btn-outline">Подробности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Обо мне" -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Обо мне</h2>
+                    <p>Привет! Меня зовут Роман, и уже более 10 лет я создаю незабываемые праздники для своих клиентов.</p>
+                    <p>Моя философия проста: каждый праздник должен быть уникальным, живым и наполненным настоящими эмоциями. Я не просто ведущий, а режиссер вашего торжества, который продумывает каждую деталь.</p>
+                    <p>За годы работы я провел более 300 мероприятий: от камерных свадеб до масштабных корпоративов на 500+ человек. Моя команда - это профессионалы, которые любят свою работу так же сильно, как и я.</p>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-text">лет опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-text">проведенных мероприятий</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-text">довольных клиентов</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-gallery">
+                    <div class="gallery-container">
+                        <div class="gallery-item main-photo">
+                            <!-- Фото ведущего с мероприятия -->
+                            <img src="https://optim.tildacdn.pub/tild6262-3639-4430-b065-663634396537/-/format/webp/XKOCzkOX8N_PaW6PtIw2.jpg.webp" alt="Ведущий на мероприятии">
+                        </div>
+                        <div class="gallery-item">
+                            <!-- Свадебное мероприятие -->
+                            <img src="https://optim.tildacdn.pub/tild6563-3831-4637-b066-613664313562/-/format/webp/PZX85HiP41WMqiQaHjqW.jpg.webp" alt="Свадебное мероприятие">
+                        </div>
+                        <div class="gallery-item">
+                            <!-- Корпоративное мероприятие -->
+                            <img src="https://optim.tildacdn.pub/tild6531-6164-4162-a339-613939303431/-/format/webp/LJZbc4WI5Ob8GZyoRqGc.jpg.webp" alt="Корпоративное мероприятие">
+                        </div>
+                        <div class="gallery-item">
+                            <!-- Юбилейное торжество -->
+                            <img src="https://optim.tildacdn.pub/tild3565-3333-4239-a663-323262626330/-/format/webp/Q1PCn7IuOyVasp_XOlHy.jpg.webp" alt="Юбилейное торжество">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Видео секция -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Промо-ролик</h2>
+            <p class="section-subtitle">Посмотрите, как проходят мои мероприятия</p>
+
+            <div class="video-container">
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/-Bx_418zHyU?rel=0&modestbranding=1&showinfo=0"
+                            title="Промо-ролик ведущего TOP-WEDDING"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Чем моя команда может помочь" -->
+    <section class="help-section">
+        <div class="container">
+            <h2 class="section-title">Чем моя команда может помочь вам в организации?</h2>
+            <p class="section-subtitle">Мы берем на себя все заботы, чтобы вы могли наслаждаться праздником</p>
+
+            <div class="help-cards">
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Разработка сценария</h3>
+                    <p>Создаем индивидуальный сценарий мероприятия, который отражает ваши пожелания и характер события.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Музыкальное сопровождение</h3>
+                    <p>Подбираем идеальную музыкальную подборку и обеспечиваем профессиональное звуковое оборудование.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Ведущий и аниматоры</h3>
+                    <p>Я и моя команда профессиональных аниматоров обеспечим динамику и интересную программу.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <i class="fas fa-gifts"></i>
+                    </div>
+                    <h3>Конкурсы и призы</h3>
+                    <p>Организуем увлекательные конкурсы, игры и подготовим призы для победителей.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Тайминг мероприятия</h3>
+                    <p>Составляем детальный тайминг, чтобы каждый момент праздника был продуман и гармоничен.</p>
+                </div>
+
+                <div class="help-card">
+                    <div class="help-card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Координация в день события</h3>
+                    <p>Координируем всех участников мероприятия, чтобы все прошло гладко и без суеты.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>TOP-WEDDING</h3>
+                    </div>
+                    <p>Профессиональный ведущий на свадьбы, корпоративы и юбилеи. Создаю праздники, которые запоминаются навсегда!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="pages/services.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="pages/how-it-works.html">Как подготовиться к мероприятию</a></li>
+                        <li><a href="pages/portfolio.html">Примеры сценариев</a></li>
+                        <li><a href="#contact">Поддержка</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Кто я</h4>
+                    <ul>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="pages/portfolio.html">Мое портфолио</a></li>
+                        <li><a href="pages/contact.html">Отзывы клиентов</a></li>
+                        <li><a href="#contact">Сертификаты и награды</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>С чем я работаю</h4>
+                    <ul>
+                        <li><a href="pages/services.html#weddings">Свадьбы</a></li>
+                        <li><a href="pages/services.html#corporate">Корпоративы</a></li>
+                        <li><a href="pages/services.html#anniversaries">Юбилеи</a></li>
+                        <li><a href="pages/services.html#birthdays">Дни рождения</a></li>
+                        <li><a href="pages/services.html#other">Другие мероприятия</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Получить скидку</h4>
+                    <p>Оставьте заявку и получите персональную скидку 10% на первую услугу!</p>
+                    <button class="btn btn-primary open-modal" data-type="discount">Получить скидку</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 TOP-WEDDING. Все права защищены.</p>
+                <p>Сайт разработан для Visual Studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно заявки -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Заявка на мероприятие</h3>
+
+            <div id="formMessage" style="display: none;"></div>
+
+            <form id="orderForm" action="assets/php/send-mail.php" method="POST">
+                <input type="hidden" id="planType" name="plan" value="">
+
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя *" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Ваш телефон *" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Ваш email *" required>
+                </div>
+
+                <div class="form-group">
+                    <select id="eventType" name="eventType" required>
+                        <option value="" disabled selected>Тип мероприятия *</option>
+                        <option value="Свадьба">Свадьба</option>
+                        <option value="Корпоратив">Корпоратив</option>
+                        <option value="Юбилей">Юбилей</option>
+                        <option value="День рождения">День рождения</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="number" id="guests" name="guests" placeholder="Количество гостей">
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Дополнительная информация" rows="3"></textarea>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="btn-text">Отправить заявку</span>
+                    <span class="btn-loading" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i> Отправка...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно контактов -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Контакты ведущего</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <h4>Роман Савченко</h4>
+                        <p>Профессиональный ведущий</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Телефон</h4>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>info@top-wedding.ru</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Время для связи</h4>
+                        <p>Ежедневно с 10:00 до 22:00</p>
+                    </div>
+                </div>
+            </div>
+            <p class="contact-note">Позвоните или напишите в мессенджер для быстрой связи!</p>
+            <div class="contact-buttons">
+                <a href="tel:+79991234567" class="btn btn-primary">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+                <a href="https://t.me/topwedding" class="btn btn-secondary">
+                    <i class="fab fa-telegram"></i> Написать в Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

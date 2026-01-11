@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | TOP-WEDDING - Живая история праздников</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- Favicon через Font Awesome (символ бокала) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥂</text></svg>">
+</head>
+<body class="portfolio-page">
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>TOP-WEDDING</h1>
+                        <p>Профессиональный ведущий</p>
+                    </div>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="portfolio.html" class="active">Портфолио</a></li>
+                        <li><a href="how-it-works.html">Как работает ведущий</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+
+                    <button class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Герой-секция портфолио -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Живая история праздников</h1>
+                <p class="hero-subtitle">Более 300 мероприятий, которые навсегда остались в памяти</p>
+                <div class="hero-stats">
+                    <div class="stat-badge">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-text">лет опыта</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number">300+</span>
+                        <span class="stat-text">мероприятий</span>
+                    </div>
+                    <div class="stat-badge">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-text">довольных клиентов</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-photo photo-1">
+                <img src="https://i.pinimg.com/originals/f9/0e/9c/f90e9cc0623182d30541979faad33bdb.jpg" alt="Свадьба">
+            </div>
+            <div class="floating-photo photo-2">
+                <img src="https://avatars.mds.yandex.net/i?id=9f804344d9f30049911bfbb4c895c1a7_l-3580534-images-thumbs&n=13" alt="Корпоратив">
+            </div>
+            <div class="floating-photo photo-3">
+                <img src="http://www.parte.info/upload/Image/articles2016/birthday/ubilei/4/Epro2.jpg" alt="Юбилей">
+            </div>
+        </div>
+    </section>
+
+    <!-- Навигация по типам мероприятий -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-tabs" id="portfolioFilter">
+                <button class="filter-tab active" data-filter="all">
+                    <i class="fas fa-star"></i>
+                    <span>Все мероприятия</span>
+                </button>
+                <button class="filter-tab" data-filter="wedding">
+                    <i class="fas fa-heart"></i>
+                    <span>Свадьбы</span>
+                </button>
+                <button class="filter-tab" data-filter="corporate">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Корпоративы</span>
+                </button>
+                <button class="filter-tab" data-filter="anniversary">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>Юбилеи</span>
+                </button>
+                <button class="filter-tab" data-filter="birthday">
+                    <i class="fas fa-gift"></i>
+                    <span>Дни рождения</span>
+                </button>
+                <button class="filter-tab" data-filter="other">
+                    <i class="fas fa-glass-cheers"></i>
+                    <span>Другие</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Сетка портфолио -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Элемент 1: Свадьба -->
+                <div class="portfolio-item wedding" data-date="2023-07-15">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=9e79c20fce84e5f60393b3eb40e53c01_l-6948927-images-thumbs&n=13" alt="Свадьба Анны и Максима">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Свадьба</span>
+                                <span class="portfolio-date">Июль 2023</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Анна & Максим</h3>
+                            <p class="portfolio-location">Ресторан "Империя", Москва</p>
+                            <p class="portfolio-description">Романтическая свадьба в стиле "Венецианский карнавал". 120 гостей, индивидуальный сценарий с элементами театрализованного представления.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 120 гостей</span>
+                                <span><i class="fas fa-clock"></i> 8 часов</span>
+                                <span><i class="fas fa-trophy"></i> 15 конкурсов</span>
+                            </div>
+                            <button class="btn-view-details" data-item="1">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 2: Корпоратив -->
+                <div class="portfolio-item corporate" data-date="2023-05-20">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://nikfoto.ru/assets/cache_image/files/images/2018/Korporativ/05_1200x0_ab3.webp" alt="Корпоратив TechCompany">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Корпоратив</span>
+                                <span class="portfolio-date">Май 2023</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>TechCompany Annual Party</h3>
+                            <p class="portfolio-location">Loft-пространство "Гараж", Санкт-Петербург</p>
+                            <p class="portfolio-description">Годовой корпоратив IT-компании с темой "Киберпанк 2077". Интерактивные зоны, VR-развлечения, живая музыка.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 250 сотрудников</span>
+                                <span><i class="fas fa-clock"></i> 6 часов</span>
+                                <span><i class="fas fa-vr-cardboard"></i> VR-зона</span>
+                            </div>
+                            <button class="btn-view-details" data-item="2">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 3: Юбилей -->
+                <div class="portfolio-item anniversary" data-date="2023-03-08">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://i.pinimg.com/originals/75/8a/bf/758abf5043fbc098c3e8c423b5241e60.jpg" alt="50-летний юбилей">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Юбилей</span>
+                                <span class="portfolio-date">Март 2023</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>50 лет Виктории Ивановне</h3>
+                            <p class="portfolio-location">Загородный клуб "Русь", Подмосковье</p>
+                            <p class="portfolio-description">Торжественный юбилей в стиле "Золотая осень". Семейное мероприятие с участием трех поколений.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 60 гостей</span>
+                                <span><i class="fas fa-clock"></i> 5 часов</span>
+                                <span><i class="fas fa-music"></i> Живой оркестр</span>
+                            </div>
+                            <button class="btn-view-details" data-item="3">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 4: День рождения -->
+                <div class="portfolio-item birthday" data-date="2023-02-14">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://i.pinimg.com/originals/87/d6/5e/87d65edd7911d0ca55e195c7167108b5.jpg" alt="День рождения 30 лет">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">День рождения</span>
+                                <span class="portfolio-date">Февраль 2023</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>30 лет Алексею</h3>
+                            <p class="portfolio-location">Караоке-бар "Голос", Москва</p>
+                            <p class="portfolio-description">Вечеринка в стиле "Ретро-дискотека 90-х". Костюмированная тематика, караоке-баттл, диджей.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 40 друзей</span>
+                                <span><i class="fas fa-clock"></i> 7 часов</span>
+                                <span><i class="fas fa-microphone"></i> Караоке-баттл</span>
+                            </div>
+                            <button class="btn-view-details" data-item="4">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 5: Свадьба -->
+                <div class="portfolio-item wedding" data-date="2022-09-10">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://lh3.googleusercontent.com/M8T7AFE1bRNgBPwiyj3zo5mRmeYO85sKBv89a1DarmLtvmsMwS101TF917SyLI-Gn0MXWNyfkm0ihHkAo21kbgMRJlSCVMkJFMa1hvE=w1200-h800-l90-e30" alt="Загородная свадьба">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Свадьба</span>
+                                <span class="portfolio-date">Сентябрь 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Екатерина & Дмитрий</h3>
+                            <p class="portfolio-location">Загородный отель "Лесная сказка", Калужская область</p>
+                            <p class="portfolio-description">Свадьба на природе в эко-стиле. Двухдневное празднование с кемпингом и активными развлечениями.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 80 гостей</span>
+                                <span><i class="fas fa-clock"></i> 2 дня</span>
+                                <span><i class="fas fa-campground"></i> Кемпинг</span>
+                            </div>
+                            <button class="btn-view-details" data-item="5">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 6: Корпоратив -->
+                <div class="portfolio-item corporate" data-date="2022-12-25">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://static.tildacdn.com/tild6663-6564-4133-b139-376263336433/GOPg-ImzVnw.jpg" alt="Новогодний корпоратив">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Корпоратив</span>
+                                <span class="portfolio-date">Декабрь 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Новогодний корпоратив "FinanceGroup"</h3>
+                            <p class="portfolio-location">Банкетный зал "Царский", Москва</p>
+                            <p class="portfolio-description">Новогодняя вечеринка в стиле "Великий Гэтсби". Шоу-программа, лотерея с ценными призами, выступление артистов.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 300 сотрудников</span>
+                                <span><i class="fas fa-clock"></i> 8 часов</span>
+                                <span><i class="fas fa-gifts"></i> Розыгрыш призов</span>
+                            </div>
+                            <button class="btn-view-details" data-item="6">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 7: Другое (Выпускной) -->
+                <div class="portfolio-item other" data-date="2022-06-25">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://i.pinimg.com/originals/ac/f3/93/acf393d0a49f744f8c600712f3493e0c.png" alt="Выпускной вечер">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Выпускной</span>
+                                <span class="portfolio-date">Июнь 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Выпускной 11-х классов</h3>
+                            <p class="portfolio-location">Школа №157, Москва</p>
+                            <p class="portfolio-description">Торжественный выпускной вечер с тематикой "Оскар". Церемония награждения, фотосессии, танцевальный флешмоб.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 100 выпускников</span>
+                                <span><i class="fas fa-clock"></i> 6 часов</span>
+                                <span><i class="fas fa-film"></i> Тема "Оскар"</span>
+                            </div>
+                            <button class="btn-view-details" data-item="7">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Элемент 8: Юбилей -->
+                <div class="portfolio-item anniversary" data-date="2022-04-18">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=ebe37670bd9482343a8f1ec04e8a552f_l-8425552-images-thumbs&n=13" alt="Серебряная свадьба">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Серебряная свадьба</span>
+                                <span class="portfolio-date">Апрель 2022</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>25 лет вместе: Ольга & Игорь</h3>
+                            <p class="portfolio-location">Ресторан "У Петровича", Москва</p>
+                            <p class="portfolio-description">Торжество в честь серебряной свадьбы. Воссоздание атмосферы 90-х годов, когда пара познакомилась.</p>
+                            <div class="portfolio-features">
+                                <span><i class="fas fa-users"></i> 50 гостей</span>
+                                <span><i class="fas fa-clock"></i> 5 часов</span>
+                                <span><i class="fas fa-history"></i> Ностальгия 90-х</span>
+                            </div>
+                            <button class="btn-view-details" data-item="8">
+                                <i class="fas fa-expand"></i> Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопка загрузки еще -->
+            <div class="load-more-container">
+                <button class="btn btn-primary" id="loadMore">
+                    <i class="fas fa-sync-alt"></i> Загрузить ещё мероприятия
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с отзывами -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <p class="section-subtitle">Что говорят те, кто уже праздновал с нами</p>
+
+            <div class="testimonials-slider swiper">
+                <div class="swiper-wrapper">
+                    <!-- Отзыв 1 -->
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://avatars.mds.yandex.net/i?id=26c803d8653ef1b0750d5a0563cd7bc0_l-5210052-images-thumbs&n=13" alt="Анна" class="client-photo">
+                                <div class="client-info">
+                                    <h4>Анна Смирнова</h4>
+                                    <p>Свадьба, июль 2023</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Роман сделал нашу свадьбу поистине незабываемой! Каждый момент был продуман до мелочей. Гости до сих пишут, что это лучшая свадьба, на которой они были. Отдельное спасибо за креативный сценарий!"</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <a href="#" class="view-photos">
+                                    <i class="fas fa-camera"></i> Посмотреть фото со свадьбы
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 2 -->
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://www.bigcitystar.ru/wp-content/uploads/2013/09/images-stories-foto36-61.jpg" alt="Дмитрий" class="client-photo">
+                                <div class="client-info">
+                                    <h4>Дмитрий Волков</h4>
+                                    <p>Корпоратив, май 2023</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Организовали годовой корпоратив для 250 человек. Роман справился блестяще! Все было на высшем уровне: от тайминга до развлечений. Коллеги до сих пор вспоминают VR-зону и интерактивные конкурсы."</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <a href="#" class="view-photos">
+                                    <i class="fas fa-camera"></i> Фото с корпоратива
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Отзыв 3 -->
+                    <div class="testimonial-slide swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://avt-3.foto.mail.ru/mail/viktoriia.ivanova.67/_avatar180?" alt="Виктория" class="client-photo">
+                                <div class="client-info">
+                                    <h4>Виктория Иванова</h4>
+                                    <p>Юбилей 50 лет, март 2023</p>
+                                </div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Спасибо за прекрасную организацию моего юбилея! Роман нашел подход ко всем гостям - от внуков до друзей молодости. Вечер прошел в теплой, душевной атмосфере. Рекомендую всем!"</p>
+                            </div>
+                            <div class="testimonial-footer">
+                                <a href="#" class="view-photos">
+                                    <i class="fas fa-camera"></i> Юбилейные фото
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Навигация слайдера -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция статистики -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Цифры, которые говорят сами за себя</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-number" data-count="300">0</div>
+                    <div class="stat-text">Проведенных мероприятий</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile-beam"></i>
+                    </div>
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-text">Довольных клиентов</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="stat-number" data-count="1500">0</div>
+                    <div class="stat-text">Проведенных конкурсов</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" data-count="2000">0</div>
+                    <div class="stat-text">Часов праздника</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA секция -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы создать свой незабываемый праздник?</h2>
+                <p>Оставьте заявку и получите индивидуальную консультацию</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Забронировать дату
+                    </a>
+                    <a href="../index.html#price" class="btn btn-secondary">
+                        <i class="fas fa-ruble-sign"></i> Посмотреть цены
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно деталей мероприятия -->
+    <div class="modal portfolio-modal" id="portfolioModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body" id="modalContent">
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h3>TOP-WEDDING</h3>
+                    </div>
+                    <p>Профессиональный ведущий на свадьбы, корпоративы и юбилеи. Создаю праздники, которые запоминаются навсегда!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Помощь</h4>
+                    <ul>
+                        <li><a href="services.html">Часто задаваемые вопросы</a></li>
+                        <li><a href="how-it-works.html">Как подготовиться к мероприятию</a></li>
+                        <li><a href="portfolio.html">Примеры сценариев</a></li>
+                        <li><a href="contact.html">Поддержка</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Кто я</h4>
+                    <ul>
+                        <li><a href="../index.html#about">Обо мне</a></li>
+                        <li><a href="portfolio.html">Мое портфолио</a></li>
+                        <li><a href="contact.html">Отзывы клиентов</a></li>
+                        <li><a href="contact.html">Сертификаты и награды</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>С чем я работаю</h4>
+                    <ul>
+                        <li><a href="services.html#weddings">Свадьбы</a></li>
+                        <li><a href="services.html#corporate">Корпоративы</a></li>
+                        <li><a href="services.html#anniversaries">Юбилеи</a></li>
+                        <li><a href="services.html#birthdays">Дни рождения</a></li>
+                        <li><a href="services.html#other">Другие мероприятия</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Получить скидку</h4>
+                    <p>Оставьте заявку и получите персональную скидку 10% на первую услугу!</p>
+                    <button class="btn btn-primary open-modal" data-type="discount">Получить скидку</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 TOP-WEDDING. Все права защищены.</p>
+                <p>Сайт разработан для Visual Studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay"></div>
+
+    <!-- Подключаем Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Подключаем основной скрипт -->
+    <script src="../assets/js/script.js"></script>
+    <!-- Подключаем скрипт для портфолио -->
+    <script src="../assets/js/portfolio.js"></script>
+</body>
+</html>
